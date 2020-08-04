@@ -8,7 +8,7 @@ The dashboard can be viewed at:
 
 ## Notes
 
-All files are inside the folder named for the challenge `WebVisualizations`. This folder contains:
+This folder contains:
 
 * A `resources` folder that contains the `cities.csv` file.
 
