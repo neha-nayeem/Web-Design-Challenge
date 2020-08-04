@@ -6,7 +6,7 @@
     <!-- bootstrap's responsive meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Latitude: A Weather Analysis Dashboard with Attitude</title>
+    <title>Latitude vs. Max Temp</title>
 
     <!-- bootstrap css links and script -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,7 +18,6 @@
 </head>
 
 <body class="bg-light">
-    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
 
         <a class="navbar-brand bg-info text-white p-2" href="index.html">Latitude</a>
@@ -51,34 +50,34 @@
 
     </nav>
 
-    <!-- main content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-lg-7 mt-5">
+            <div class="col-md-7 mt-5">
                 <div class="card">
-                    <h4 class="card-header text-info">Summary: Latitude vs. X</h4>
+                    <h4 class="card-header bg-info text-white">Latitude vs. Maximum Temperature</h4>
                     <div class="card-body">
                         <img id="img-wrap" class="img-fluid img-center" src="assets/images/Fig1.png" Title="Lat vs Temp" width="400">
-                        <p class="card-text font-weight-light">In this project, we are supposed to visualize the weather of 500+ cities across the world of varying distance from the equator by utilizing the CitiPy library and the OpenWeatherMap API.</p>
-                        <p class="card-text font-weight-light">After creating the dataset, Matplotlib was used to plot latitude against various factors such as max temperatures, wind speed, humidity and cloudiness in order to find possible correlations. This site provides the data used and
-                            the visualizations created, along with an explanation of trends or correlations.</p>
+                        <p class="card-text font-weight-light summary-p">The scatterplot for Latitude vs. Max Temperature (F) shows that the temperatures tends to be higher the closer the city is to the equator (0 degrees latitude).</p>
+                        <p class="card-text font-weight-light summary-p">The northern hemisphere shows a strong negative correlation with temperatures decreasing as you move away from the equator (increasing latitude), while the southern hemisphere shows a strong positive correlation with temperatures
+                            increasing as you move towards the equator (increasing latitude).</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-12 col-lg-5 mt-5">
+            <div class="col-md-5 mt-5">
                 <div class="card">
                     <h4 class="card-header text-info">Visualizations</h4>
                     <div class="card-body">
 
                         <div class="row pb-3">
                             <div class="col-md-6">
-                                <a href="latvsmaxtemp.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig1.png" title="Lat vs. Max Temp" width="400"></a>
+                                <a href="latvsmaxtemp.html"><img class="img-fluid img-center viz-box active" src="assets/images/Fig1.png" title="Lat vs. Max Temp" width="400"></a>
                             </div>
                             <div class="col-md-6">
                                 <a href="latvshum.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig2.png" title="Lat vs. Humidity" width="400"></a>
                             </div>
                         </div>
+
                         <div class="row pb-3">
                             <div class="col-md-6">
                                 <a href="latvscloud.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig3.png" title="Lat vs. Cloudiness" width="400"></a>
@@ -88,14 +87,11 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
             </div>
 
         </div>
-
     </div>
 
     <!-- Bootstrap javascript tags -->

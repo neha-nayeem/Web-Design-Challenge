@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- bootstrap's responsive meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Latitude: A Weather Analysis Dashboard with Attitude</title>
+    <title>Latitude: Comparisons</title>
 
-    <!-- bootstrap css links and script -->
+    <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -18,7 +17,6 @@
 </head>
 
 <body class="bg-light">
-    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
 
         <a class="navbar-brand bg-info text-white p-2" href="index.html">Latitude</a>
@@ -41,7 +39,7 @@
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="comparisons.html">Comparison</a>
+                    <a class="nav-link" href="#">Comparisons</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="data.html">Data</a>
@@ -51,44 +49,45 @@
 
     </nav>
 
-    <!-- main content -->
-    <div class="container">
+    <div class="container bg-white mt-5">
         <div class="row">
-            <div class="col-md-12 col-lg-7 mt-5">
+            <div class="col-lg-12 p-0">
+
                 <div class="card">
-                    <h4 class="card-header text-info">Summary: Latitude vs. X</h4>
+                    <h4 class="card-header text-info">Comparison: Latitude vs. X</h4>
+
                     <div class="card-body">
-                        <img id="img-wrap" class="img-fluid img-center" src="assets/images/Fig1.png" Title="Lat vs Temp" width="400">
-                        <p class="card-text font-weight-light">In this project, we are supposed to visualize the weather of 500+ cities across the world of varying distance from the equator by utilizing the CitiPy library and the OpenWeatherMap API.</p>
-                        <p class="card-text font-weight-light">After creating the dataset, Matplotlib was used to plot latitude against various factors such as max temperatures, wind speed, humidity and cloudiness in order to find possible correlations. This site provides the data used and
-                            the visualizations created, along with an explanation of trends or correlations.</p>
-                    </div>
-                </div>
-            </div>
+                        <p class="card-text pb-2">Click any plot to get an in-depth analysis.</p>
 
-            <div class="col-md-12 col-lg-5 mt-5">
-                <div class="card">
-                    <h4 class="card-header text-info">Visualizations</h4>
-                    <div class="card-body">
+                        <div class="row py-3">
 
-                        <div class="row pb-3">
-                            <div class="col-md-6">
-                                <a href="latvsmaxtemp.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig1.png" title="Lat vs. Max Temp" width="400"></a>
+                            <div class="col-md-6 p-0">
+                                <h6 class="text-info text-center m-0">vs. Max Temperature</h6>
+                                <a href="latvsmaxtemp.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig1.png" Title="Lat vs Max Temp" width="400"></a>
                             </div>
-                            <div class="col-md-6">
-                                <a href="latvshum.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig2.png" title="Lat vs. Humidity" width="400"></a>
+
+                            <div class="col-md-6 p-0">
+                                <h6 class="text-info text-center m-0">vs. Humidity</h6>
+                                <a href="latvshum.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig2.png" Title="Lat vs Humidity" width="400"></a>
                             </div>
+
                         </div>
-                        <div class="row pb-3">
-                            <div class="col-md-6">
-                                <a href="latvscloud.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig3.png" title="Lat vs. Cloudiness" width="400"></a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="latvswind.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig4.png" title="Lat vs. Wind Speed" width="400"></a>
-                            </div>
-                        </div>
-                    </div>
 
+                        <div class="row py-3">
+
+                            <div class="col-md-6 p-0">
+                                <h6 class="text-info text-center m-0">vs. Cloudiness</h6>
+                                <a href="latvscloud.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig3.png" Title="Lat vs Cloudiness" width="400"></a>
+                            </div>
+
+                            <div class="col-md-6 p-0">
+                                <h6 class="text-info text-center m-0">vs. Wind Speed</h6>
+                                <a href="latvswind.html"><img class="img-fluid img-center viz-box" src="assets/images/Fig4.png" Title="Lat vs Wind Speed" width="400"></a>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -97,6 +96,7 @@
         </div>
 
     </div>
+
 
     <!-- Bootstrap javascript tags -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
