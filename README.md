@@ -4,7 +4,7 @@
 
 For this homework created a visualization dashboard website using visualizations we've created in a past assignment (WeatherPy in the Python-API-Challenge). Individual pages for each plot have been created along with a means by which we can navigate between them. These pages contain the visualizations and their corresponding explanations. There is also a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build the vizualizations.
 
-The dashboard can be viewed at: 
+The dashboard can be viewed at: https://neha-nayeem.github.io/Web-Design-Challenge
 
 ## Notes
 
